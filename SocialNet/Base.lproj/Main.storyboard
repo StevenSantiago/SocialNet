@@ -6,8 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="IndieFlower.ttf">
+            <string>IndieFlower</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
@@ -20,11 +26,124 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a sign in method" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acs-yN-MRd">
+                                <rect key="frame" x="16" y="133" width="343" height="25"/>
+                                <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gZO-gh-EBs" customClass="ViewAdjustments" customModule="SocialNet" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="devslopes-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kNS-kl-rQu">
+                                        <rect key="frame" x="40" y="0.0" width="295" height="119"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="119" id="iCI-aY-TEb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.65974105139999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="kNS-kl-rQu" firstAttribute="top" secondItem="gZO-gh-EBs" secondAttribute="top" id="1C1-Vc-YLS"/>
+                                    <constraint firstAttribute="height" constant="125" id="akp-lw-77f"/>
+                                    <constraint firstAttribute="trailing" secondItem="kNS-kl-rQu" secondAttribute="trailing" constant="40" id="jfm-m4-l2E"/>
+                                    <constraint firstItem="kNS-kl-rQu" firstAttribute="leading" secondItem="gZO-gh-EBs" secondAttribute="leading" constant="40" id="lSn-Rz-Y5z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFE-to-ipl">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acount will automatically be created if you dont have one" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKO-vl-HYL">
+                                        <rect key="frame" x="8" y="6" width="359" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="EDa-Dr-hU8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058823529409999999" green="0.65974105139999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bKO-vl-HYL" firstAttribute="top" secondItem="jFE-to-ipl" secondAttribute="top" constant="6" id="4eJ-e0-bX3"/>
+                                    <constraint firstAttribute="height" constant="60" id="CSe-fd-J05"/>
+                                    <constraint firstItem="bKO-vl-HYL" firstAttribute="leading" secondItem="jFE-to-ipl" secondAttribute="leading" constant="8" id="P6V-Rq-uzm"/>
+                                    <constraint firstAttribute="trailing" secondItem="bKO-vl-HYL" secondAttribute="trailing" constant="8" id="bp1-ts-pfU"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4c-2p-JAC" customClass="RoundButton" customModule="SocialNet" customModuleProvider="target">
+                                <rect key="frame" x="122.5" y="166" width="130" height="130"/>
+                                <color key="backgroundColor" red="0.093216590579999994" green="0.34985572100000001" blue="0.60308903459999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="m0X-HY-g70"/>
+                                    <constraint firstAttribute="height" constant="130" id="zue-HM-j25"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="9NB-bj-MP3">
+                                <rect key="frame" x="46" y="312" width="283" height="137"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wbr-gq-itf">
+                                        <rect key="frame" x="0.0" y="0.0" width="283" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xkt-4k-hfI">
+                                        <rect key="frame" x="0.0" y="50" width="283" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UJP-W2-YcQ" customClass="SIgnInButton" customModule="SocialNet" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="283" height="37"/>
+                                        <color key="backgroundColor" red="0.058823529409999999" green="0.65974105139999994" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="IndieFlower" family="Indie Flower" pointSize="17"/>
+                                        <state key="normal" title="Sign in">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UJP-W2-YcQ" firstAttribute="leading" secondItem="9NB-bj-MP3" secondAttribute="leading" id="DEW-z2-aJW"/>
+                                    <constraint firstAttribute="trailing" secondItem="UJP-W2-YcQ" secondAttribute="trailing" id="F0Y-Wy-kiH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wbr-gq-itf" secondAttribute="trailing" id="bG4-M2-I2I"/>
+                                    <constraint firstItem="Wbr-gq-itf" firstAttribute="leading" secondItem="9NB-bj-MP3" secondAttribute="leading" id="eSS-ke-FKw"/>
+                                    <constraint firstAttribute="trailing" secondItem="xkt-4k-hfI" secondAttribute="trailing" id="ezG-V0-75I"/>
+                                    <constraint firstItem="xkt-4k-hfI" firstAttribute="leading" secondItem="9NB-bj-MP3" secondAttribute="leading" id="gvt-OA-VdH"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="acs-yN-MRd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3c2-YN-rcg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9NB-bj-MP3" secondAttribute="trailing" constant="30" id="ElN-Je-vWb"/>
+                            <constraint firstItem="C4c-2p-JAC" firstAttribute="top" secondItem="acs-yN-MRd" secondAttribute="bottom" constant="8" id="QRD-G7-RYz"/>
+                            <constraint firstItem="9NB-bj-MP3" firstAttribute="top" secondItem="C4c-2p-JAC" secondAttribute="bottom" constant="16" id="Tc9-86-xcv"/>
+                            <constraint firstItem="gZO-gh-EBs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="U0R-Aa-unE"/>
+                            <constraint firstItem="acs-yN-MRd" firstAttribute="top" secondItem="gZO-gh-EBs" secondAttribute="bottom" constant="8" id="UoZ-21-VgS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jFE-to-ipl" secondAttribute="bottom" id="ddX-8P-iv1"/>
+                            <constraint firstItem="acs-yN-MRd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="fYu-dq-4Zt"/>
+                            <constraint firstItem="gZO-gh-EBs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nZB-Gs-uRw"/>
+                            <constraint firstItem="jFE-to-ipl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nZT-3J-W6h"/>
+                            <constraint firstAttribute="trailing" secondItem="gZO-gh-EBs" secondAttribute="trailing" id="q2a-1v-yXa"/>
+                            <constraint firstItem="9NB-bj-MP3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="qmY-qD-6XZ"/>
+                            <constraint firstItem="gZO-gh-EBs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sVb-a4-2hy"/>
+                            <constraint firstAttribute="trailing" secondItem="jFE-to-ipl" secondAttribute="trailing" id="uSi-VP-DXL"/>
+                            <constraint firstAttribute="trailing" secondItem="gZO-gh-EBs" secondAttribute="trailing" id="vOQ-u4-cAG"/>
+                            <constraint firstItem="C4c-2p-JAC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yNV-Ln-Lk4"/>
+                            <constraint firstItem="9NB-bj-MP3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zRw-SZ-jpa"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="121.88905547226388"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="devslopes-logo" width="150" height="94"/>
+        <image name="f" width="352" height="328"/>
+    </resources>
 </document>

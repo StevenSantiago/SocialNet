@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0744E6851E99FD7D0090C895 /* ViewAdjustments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744E6841E99FD7D0090C895 /* ViewAdjustments.swift */; };
+		0744E6871E99FF0B0090C895 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744E6861E99FF0B0090C895 /* Constants.swift */; };
+		0744E6891E9A00A70090C895 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744E6881E9A00A70090C895 /* RoundButton.swift */; };
+		0744E68B1E9A02E90090C895 /* SIgnInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0744E68A1E9A02E90090C895 /* SIgnInButton.swift */; };
+		079F43261E977E57005251D1 /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 079F43251E977E57005251D1 /* IndieFlower.ttf */; };
 		07CDB8B11E939E340088DE02 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB8B01E939E340088DE02 /* AppDelegate.swift */; };
 		07CDB8B31E939E340088DE02 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CDB8B21E939E340088DE02 /* SignInVC.swift */; };
 		07CDB8B61E939E340088DE02 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07CDB8B41E939E340088DE02 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0744E6841E99FD7D0090C895 /* ViewAdjustments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewAdjustments.swift; sourceTree = "<group>"; };
+		0744E6861E99FF0B0090C895 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0744E6881E9A00A70090C895 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0744E68A1E9A02E90090C895 /* SIgnInButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIgnInButton.swift; sourceTree = "<group>"; };
+		079F43251E977E57005251D1 /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
 		07CDB8AD1E939E340088DE02 /* SocialNet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialNet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CDB8B01E939E340088DE02 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07CDB8B21E939E340088DE02 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -63,6 +73,7 @@
 		07CDB8AF1E939E340088DE02 /* SocialNet */ = {
 			isa = PBXGroup;
 			children = (
+				0744E6861E99FF0B0090C895 /* Constants.swift */,
 				07CDB8C61E93A1670088DE02 /* Models */,
 				07CDB8C51E93A1610088DE02 /* Views */,
 				07CDB8C41E93A1570088DE02 /* Controllers */,
@@ -73,6 +84,7 @@
 				07CDB8B91E939E340088DE02 /* LaunchScreen.storyboard */,
 				07CDB8BC1E939E340088DE02 /* Info.plist */,
 				07CDB8C21E939EB60088DE02 /* GoogleService-Info.plist */,
+				079F43251E977E57005251D1 /* IndieFlower.ttf */,
 			);
 			path = SocialNet;
 			sourceTree = "<group>";
@@ -87,6 +99,9 @@
 		07CDB8C51E93A1610088DE02 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0744E6841E99FD7D0090C895 /* ViewAdjustments.swift */,
+				0744E6881E9A00A70090C895 /* RoundButton.swift */,
+				0744E68A1E9A02E90090C895 /* SIgnInButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -178,6 +193,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				079F43261E977E57005251D1 /* IndieFlower.ttf in Resources */,
 				07CDB8BB1E939E340088DE02 /* LaunchScreen.storyboard in Resources */,
 				07CDB8C31E939EB60088DE02 /* GoogleService-Info.plist in Resources */,
 				07CDB8B81E939E340088DE02 /* Assets.xcassets in Resources */,
@@ -241,7 +257,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				07CDB8B31E939E340088DE02 /* SignInVC.swift in Sources */,
+				0744E6891E9A00A70090C895 /* RoundButton.swift in Sources */,
 				07CDB8B11E939E340088DE02 /* AppDelegate.swift in Sources */,
+				0744E6851E99FD7D0090C895 /* ViewAdjustments.swift in Sources */,
+				0744E6871E99FF0B0090C895 /* Constants.swift in Sources */,
+				0744E68B1E9A02E90090C895 /* SIgnInButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
